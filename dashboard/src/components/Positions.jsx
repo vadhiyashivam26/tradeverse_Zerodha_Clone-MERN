@@ -6,7 +6,7 @@ function Positions() {
     let [allPositions, setAllPositions] = useState([]);
 
     useEffect(() => {
-        axios.get("https://tradeverse-zerodha-clone.onrender.com/allPositions").then((res) => {
+        axios.get("https://tradeverse-zerodha-clone-mern.onrender.com/allPositions").then((res) => {
             console.log(res.data);
             setAllPositions(res.data);
         });
